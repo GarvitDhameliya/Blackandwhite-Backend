@@ -7,10 +7,6 @@ const facultySchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
-    role: {
-      type: String,
-      enum: ["admin", "faculty", "subadmin", "student"],
-    },
     department: {
         type: String,
         trim: true,
@@ -26,11 +22,22 @@ const facultySchema = new mongoose.Schema(
         type: Date,
     },
 
-    //user ref
 
     //student ref
-
-
+    student: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "student",
+    },
+    //batch ref
+    batch: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "batch",
+    },
+    //signinsheet ref
+    signinsheet: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "signinsheet",
+    },
 
     is_active: {
       type: Boolean,

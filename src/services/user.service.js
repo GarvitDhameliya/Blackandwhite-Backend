@@ -29,6 +29,10 @@ const updateUserDetails = async (userId, updateBody) => {
 const deleteUser = async (userId) => {
   return User.findByIdAndDelete(userId);
 };
+//get user role
+const getAllUser = async (role) => {
+  return await User.find(role);
+};
 
 module.exports = {
   createUser,
@@ -37,4 +41,5 @@ module.exports = {
   updateUserDetails,
   getUserByEmail,
   deleteUser,
+  getAllUser,
 };

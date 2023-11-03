@@ -7,10 +7,6 @@ const studentSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
-    role: {
-      type: String,
-      enum: ["admin", "faculty", "subadmin", "student"],
-    },
     course: {
         type: String,
         trim: true,
@@ -33,11 +29,11 @@ const studentSchema = new mongoose.Schema(
     updated_at:{
         type: Date,
     },
-
-    //user ref
-
-
-
+    //signinsheet ref
+    signinsheet: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "signinsheet",
+    },
     is_active: {
       type: Boolean,
       default: true,

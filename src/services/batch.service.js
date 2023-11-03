@@ -7,7 +7,7 @@ const createBatch = async (reqBody) => {
 
 // Get batch list
 const getBatchList = async (filter, options) => {
-  return Batch.find()
+  return Batch.find().populate("student").populate("faculty");
 };
 
 // Get batch by email

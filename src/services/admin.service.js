@@ -7,7 +7,7 @@ const createAdmin = async (reqBody) => {
 
 // Get admin list
 const getAdminList = async (filter, options) => {
-  return Admin.find()
+  return Admin.find().populate("subadmin");
 };
 
 // Get admin by email

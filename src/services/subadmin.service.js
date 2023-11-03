@@ -7,7 +7,7 @@ const createSubadmin = async (reqBody) => {
 
 // Get subadmin list
 const getSubadminList = async (filter, options) => {
-  return Subadmin.find()
+  return Subadmin.find().populate("faculaty").populate("student").populate("course").populate("batch").populate("signinsheet");
 };
 
 // Get subadmin by email

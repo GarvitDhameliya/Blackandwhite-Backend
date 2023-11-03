@@ -7,10 +7,6 @@ const subadminSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
-    role: {
-      type: String,
-      enum: ["admin", "faculty", "subadmin", "student"],
-    },
     Permissions: {
       type: String,
       trim: true,
@@ -22,13 +18,34 @@ const subadminSchema = new mongoose.Schema(
         type: Date,
     },
 
-    //user ref
-
     //faculty ref
+    faculty: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "faculty",
+    },
 
     //student ref
+    student: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "student",
+    },
 
     //batch ref
+    batch: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "batch",
+    },
+
+    //course ref
+    course: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "course",
+    },
+    //signinsheet ref
+    signinsheet: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "signinsheet",
+    },
 
     is_active: {
       type: Boolean,

@@ -40,4 +40,10 @@ router.delete(
   userController.deleteUser
 );
 
+router.get(
+  "/allusers",
+  validate(userValidation.getAllUser),
+  userController.getAllUser
+);
+
 module.exports = router;

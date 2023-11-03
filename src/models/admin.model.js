@@ -7,10 +7,6 @@ const adminSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
-    role: {
-      type: String,
-      enum: ["admin", "faculty", "subadmin", "student"],
-    },
     Permissions: {
       type: String,
       trim: true,
@@ -22,9 +18,11 @@ const adminSchema = new mongoose.Schema(
         type: Date,
     },
 
-    //user ref
-
     //subadmin ref
+    subadmin: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "subadmin",
+    },
 
     is_active: {
       type: Boolean,

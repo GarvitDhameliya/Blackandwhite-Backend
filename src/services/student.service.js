@@ -7,7 +7,7 @@ const createStudent = async (reqBody) => {
 
 // Get student list
 const getStudentList = async (filter, options) => {
-  return Student.find()
+  return Student.find().populate("signinsheet");
 };
 
 // Get student by email
