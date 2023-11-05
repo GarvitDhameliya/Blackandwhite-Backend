@@ -1,7 +1,7 @@
 const express = require("express");
 
 const userRoute = require("./user.route");
-const loginRoute = require("./login.route.js/index.js");
+const loginRoute = require("./login.route");
 const adminRoute = require("./admin.route.js");
 const subadminRoute = require("./subadmin.route.js");
 const facultyRoute = require("./faculty.route.js");
