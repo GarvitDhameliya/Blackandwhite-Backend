@@ -7,9 +7,14 @@ const adminSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
-    Permissions: {
+    username: {
       type: String,
-      trim: true,
+      required: true,
+      unique: true
+    },
+    password: {
+      type: String,
+      default: "bnw_123"
     },
     created_at:{
         type: Date,

@@ -12,7 +12,7 @@ router.post(
   userController.createUser
 );
 
-// Get user list
+// Get user lis
 router.get(
   "/list",
   validate(userValidation.getUserList),

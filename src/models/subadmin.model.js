@@ -7,9 +7,14 @@ const subadminSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
-    Permissions: {
+    username: {
       type: String,
-      trim: true,
+      required: true,
+      unique: true
+    },
+    password: {
+      type: String,
+      default: "bnw_456"
     },
     created_at:{
         type: Date,

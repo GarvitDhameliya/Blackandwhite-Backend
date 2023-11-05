@@ -11,9 +11,18 @@ const facultySchema = new mongoose.Schema(
         type: String,
         trim: true,
     },
-    Permissions: {
+    username: {
       type: String,
-      trim: true,
+      required: true,
+      unique: true
+    },
+    password: {
+      type: String,
+      default: "bnw_faculty"
+    },
+    gender: {
+      type: String,
+      enum: ['m', 'M', 'f', 'F', 'Male', "male", "Female", "female"],
     },
     created_at:{
         type: Date,
