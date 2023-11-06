@@ -18,9 +18,9 @@ const studentSchema = new mongoose.Schema(
         type: Number,
         default : 0,
     },
-    Permissions: {
+    password: {
       type: String,
-      trim: true,
+      default: "bnw_student"
     },
     created_at:{
         type: Date,

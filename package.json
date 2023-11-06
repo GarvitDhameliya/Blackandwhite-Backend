@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
+<<<<<<< HEAD
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -21,5 +22,18 @@
     "mongoose": "^8.0.0",
     "nodemon": "^3.0.1",
     "path": "^0.12.7"
+=======
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "cron": "^3.1.6",
+    "crons": "^1.1.1-alpha.0",
+    "dotenv": "^16.3.1",
+    "drag-drop": "^7.2.0",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0",
+    "nodemon": "^3.0.1"
+>>>>>>> c46961a612a60937702636a302619b9a3985ffbc
   }
 }

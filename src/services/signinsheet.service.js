@@ -1,4 +1,5 @@
 const {Signinsheet} = require("../models");
+const Faculty = require("../models/faculty.model");
 
 // Craete signinsheet
 const createSigninsheet = async (reqBody) => {
@@ -7,7 +8,7 @@ const createSigninsheet = async (reqBody) => {
 
 // Get signinsheet list
 const getSigninsheetList = async (filter, options) => {
-  return Signinsheet.find()
+  return Signinsheet.find().populate("admin").populate("subadmin").populate("faculty").populate("student").populate("maintopic");
 };
 
 // Get signinsheet by email
