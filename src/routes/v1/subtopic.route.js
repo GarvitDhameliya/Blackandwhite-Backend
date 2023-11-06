@@ -1,6 +1,6 @@
 const express = require("express");
-const { subtopicValidation } = require("../validations");
-const { subtopicController } = require("../controllers");
+const { subtopicValidation } = require("../../validations");
+const { subtopicController } = require("../../controllers");
 const validate = require("../../middlewares/validate");
 
 const router = express.Router();

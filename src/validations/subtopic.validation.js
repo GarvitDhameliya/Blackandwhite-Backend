@@ -1,4 +1,12 @@
 const Joi = require("joi");
+const optionSchema = Joi.object({
+  subtopic_name: Joi.string().trim().required(),
+  grade: Joi.number().default(0),
+  feedback: Joi.string().trim().required(),
+  start_date: Joi.string().trim().required(),
+  attendence: Joi.string().trim().required(),
+});
+
 
 // create subtopic
 const createSubtopic = {

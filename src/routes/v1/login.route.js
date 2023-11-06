@@ -5,8 +5,8 @@ const subAdmin = require("../../models/subadmin.model");
 const admin = require("../../models/admin.model");
 const student = require("../../models/student.model");
 const faculty = require("../../models/faculty.model");
-const { constructFromObject } = require("sib-api-v3-sdk/src/ApiClient"); //mane nai khabar
-const { JsonWebTokenError } = require("jsonwebtoken");
+//const { constructFromObject } = require("sib-api-v3-sdk/src/ApiClient"); //mane nai khabar
+//const { JsonWebTokenError } = require("jsonwebtoken");
 
 const route = express.Router();
 
