@@ -4,7 +4,9 @@ const Joi = require("joi");
 const createBatch = {
   body: Joi.object().keys({
     batch_name: Joi.string().required().trim(),
-    Permissions: Joi.string().required().trim(),
+    batch_status: Joi.string().required().trim(),
+    start_date: Joi.date().iso(),
+    end_date: Joi.date().iso(),
   }),
 };
 

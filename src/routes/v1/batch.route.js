@@ -1,6 +1,6 @@
 const express = require("express");
-const { batchValidation } = require("../validations");
-const { batchController } = require("../controllers");
+const { batchValidation } = require("../../validations");
+const { batchController } = require("../../controllers");
 const validate = require("../../middlewares/validate");
 
 const router = express.Router();

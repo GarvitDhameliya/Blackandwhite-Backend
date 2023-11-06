@@ -4,6 +4,7 @@ const Joi = require("joi");
 const createFaculty = {
   body: Joi.object().keys({
     faculty_name: Joi.string().required().trim(),
+    department: Joi.string().required().trim(),
     Permissions: Joi.string().required().trim(),
   }),
 };

@@ -1,5 +1,8 @@
 const Joi = require("joi");
 
+const optionSchema = Joi.object({
+  subtopic: Joi.string().trim().required(),
+})
 // create subtopic
 const createSubtopic = {
   body: Joi.object().keys({

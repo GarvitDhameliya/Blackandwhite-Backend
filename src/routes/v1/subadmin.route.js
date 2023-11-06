@@ -1,6 +1,6 @@
 const express = require("express");
-const { subadminValidation } = require("../validations");
-const { subadminController } = require("../controllers");
+const { subadminValidation } = require("../../validations");
+const { subadminController } = require("../../controllers");
 const validate = require("../../middlewares/validate");
 
 const router = express.Router();
@@ -15,7 +15,7 @@ router.post(
 // Get subadmin list
 router.get(
   "/list",
-  validate(subadminValidation.getsubSubadminList),
+  validate(subadminValidation.getSubadminList),
   subadminController.getSubadminList
 );
 

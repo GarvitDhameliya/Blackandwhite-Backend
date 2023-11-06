@@ -2,10 +2,9 @@ const http = require("http");
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const { connectDB } = require("./db/dbConnection");
-const routes = require("./routes/v1");
-require("./helpers/crons");
-const config = require("./config/config");
+const { connectDB } = require("./src/db/dbConnection");
+const routes = require("./src/routes/v1");
+const config = require("./src/config/config");
 
 const app = express();
 
