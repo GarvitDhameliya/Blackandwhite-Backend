@@ -5,6 +5,7 @@ const createFaculty = async (reqBody) => {
   return Faculty.create(reqBody);
 };
 
+
 // Get faculty list
 const getFacultyList = async (filter, options) => {
   return Faculty.find().populate("student").populate("batch").populate("signinsheet");

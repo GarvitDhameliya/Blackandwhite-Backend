@@ -8,9 +8,9 @@ const optionSchema = Joi.object({
 });
 
 
-const optionSchema = Joi.object({
-  subtopic: Joi.string().trim().required(),
-})
+//const optionSchema = Joi.object({
+  //subtopic: Joi.string().trim().required(),
+//})
 // create subtopic
 const createSubtopic = {
   body: Joi.object().keys({

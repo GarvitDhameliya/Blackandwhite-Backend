@@ -4,10 +4,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const { connectDB } = require("./src/db/dbConnection");
 const routes = require("./src/routes/v1");
-<<<<<<< HEAD
-=======
 require("./src/helpers/crons");
->>>>>>> c46961a612a60937702636a302619b9a3985ffbc
 const config = require("./src/config/config");
 
 const app = express();

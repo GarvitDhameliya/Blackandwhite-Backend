@@ -8,4 +8,5 @@ module.exports.courseService=require('./course.service.js');
 module.exports.signinsheetService=require('./signinsheet.service.js');
 module.exports.maintopicService=require('./maintopic.service.js');
 module.exports.subtopicService=require('./subtopic.service.js');
+module.exports.subtopicService=require('./email.service.js');
 
