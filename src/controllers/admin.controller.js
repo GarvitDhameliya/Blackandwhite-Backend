@@ -5,10 +5,6 @@ const createAdmin = async (req, res) => {
   try {
     const reqBody = req.body;
 
-    const adminExists = await adminService.getAdminByEmail(reqBody.email);
-    if (adminExists) {
-      throw new Error("Admin already created by this email!");
-    }
 
     const admin = await adminService.createAdmin(reqBody);
     if (!admin) {

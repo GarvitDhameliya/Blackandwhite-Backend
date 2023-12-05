@@ -13,7 +13,7 @@ const facultySchema = new mongoose.Schema(
     username: {
       type: String,
       required: true,
-      unique: true
+      unique: true,
     },
     password: {
       type: String,
@@ -22,12 +22,6 @@ const facultySchema = new mongoose.Schema(
     gender: {
       type: String,
       enum: ['m', 'M', 'f', 'F', 'Male', "male", "Female", "female"],
-    },
-    created_at:{
-        type: Date,
-    },
-    updated_at:{
-        type: Date,
     },
 
 

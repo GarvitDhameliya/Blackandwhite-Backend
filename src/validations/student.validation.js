@@ -4,7 +4,10 @@ const Joi = require("joi");
 const createStudent = {
   body: Joi.object().keys({
     student_name: Joi.string().required().trim(),
-    Permissions: Joi.string().required().trim(),
+    course: Joi.string().required().trim(),
+    enrollment_number: Joi.string().required().trim(),
+    gr_id: Joi.string().required().trim(),
+    password: Joi.string().required().trim(),
   }),
 };
 

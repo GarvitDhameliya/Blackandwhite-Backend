@@ -22,12 +22,7 @@ const studentSchema = new mongoose.Schema(
       type: String,
       default: "bnw_student"
     },
-    created_at:{
-        type: Date,
-    },
-    updated_at:{
-        type: Date,
-    },
+
     //signinsheet ref
     signinsheet: {
       type: mongoose.Schema.Types.ObjectId,

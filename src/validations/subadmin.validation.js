@@ -4,7 +4,8 @@ const Joi = require("joi");
 const createSubadmin = {
   body: Joi.object().keys({
     subadmin_name: Joi.string().required().trim(),
-    Permissions: Joi.string().required().trim(),
+    username: Joi.string().required().trim(),
+    password: Joi.string().required().trim(),
   }),
 };
 

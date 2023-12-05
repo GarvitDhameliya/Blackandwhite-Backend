@@ -5,10 +5,7 @@ const createFaculty = async (req, res) => {
   try {
     const reqBody = req.body;
 
-    const facultyExists = await facultyService.getFacultyByEmail(reqBody.email);
-    if (facultyExists) {
-      throw new Error("Faculty already created by this email!");
-    }
+
 
     const faculty = await facultyService.createFaculty(reqBody);
     if (!faculty) {

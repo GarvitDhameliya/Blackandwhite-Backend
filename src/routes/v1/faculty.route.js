@@ -7,7 +7,7 @@ const router = express.Router();
 
 // Create faculty
 router.post(
-  "/create",
+  "/create-faculty",
   validate(facultyValidation.createFaculty),
   facultyController.createFaculty
 );

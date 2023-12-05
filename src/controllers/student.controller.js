@@ -5,11 +5,6 @@ const createStudent = async (req, res) => {
   try {
     const reqBody = req.body;
 
-    const studentExists = await studentService.getStudentByEmail(reqBody.email);
-    if (studentExists) {
-      throw new Error("Student already created by this email!");
-    }
-
     const student = await studentService.createStudent(reqBody);
     if (!student) {
       throw new Error("Something went wrong, please try again or later!");

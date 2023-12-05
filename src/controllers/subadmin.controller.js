@@ -5,11 +5,6 @@ const createSubadmin = async (req, res) => {
   try {
     const reqBody = req.body;
 
-    const subadminExists = await subadminService.getSubadminByEmail(reqBody.email);
-    if (subadminExists) {
-      throw new Error("subAdmin already created by this email!");
-    }
-
     const subadmin = await subadminService.createSubadmin(reqBody);
     if (!subadmin) {
       throw new Error("Something went wrong, please try again or later!");

@@ -4,7 +4,8 @@ const Joi = require("joi");
 const createAdmin = {
   body: Joi.object().keys({
     admin_name: Joi.string().required().trim(),
-    Permissions: Joi.string().required().trim(),
+    username: Joi.string().required().trim(),
+    password: Joi.string().required().trim(),
   }),
 };
 
