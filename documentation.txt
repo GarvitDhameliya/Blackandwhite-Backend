@@ -1,19 +1,18 @@
 USER ==============================================================================================
 ## CREATE
-localhost:4000/v1/user/create
+localhost:3000/v1/user/create
 {
-	"first_name":"Garvit",
-	"last_name":"Dhameliya",
+	"user_name":"Garvit",
 	"email":"dhameliysgarvit@gmail.com",
 	"password":"123456garvit",
-	"address":"A-302 agaman recidency near mauni international school,utran"
+	"profile_info":"admin"
 }
 ## LIST
-localhost:4000/v1/user/list
+localhost:3000/v1/user/list
 ## UPDATE
-localhost:4000/v1/user/update/:userId
+localhost:3000/v1/user/update/:userId
 ## DELETE
-localhost:4000/v1/user/delete/:userId
+localhost:3000/v1/user/delete/:userId
 
 
 ADMIN ==============================================================================================
@@ -21,7 +20,8 @@ ADMIN ==========================================================================
 localhost:4000/v1/admin/create
 {
 	"admin_name":"Hinal Savaliya",
-	"Permissions":"permissions"
+	"username":"hinal savaliya",
+         "password":"bnw_123",
 }
 ## LIST
 localhost:4000/v1/admin/list
@@ -36,7 +36,8 @@ SUB ADMIN ======================================================================
 localhost:4000/v1/subadmin/create
 {
 	"subadmin_name":"Dhara Laheri",
-	"Permissions":"permissions"
+	"username":"Dhara",
+        "password":"bnw_456"
 }
 ## LIST
 localhost:4000/v1/subadmin/list
@@ -52,7 +53,9 @@ localhost:4000/v1/faculty/create
 {
 	"faculty_name":"Garvit Dhameliya",
 	"department":"department",
-	"Permissions":"Permissions"
+	"username":"Purva",
+        "password":"bnw_faculty",
+        "gender":"female"
 }
 ## LIST
 localhost:4000/v1/faculty/list
@@ -67,7 +70,10 @@ STUDENT ========================================================================
 localhost:4000/v1/student/create
 {
 	"student_name":"Purva Ratanpara",
-	"Permissions":"Permissions"
+	"course":"Full dev",
+        "enrollment_number":"P32543267s214",
+        "gr_id":"2873".
+        "password":"bnw_student"
 }
 ## LIST
 localhost:4000/v1/student/list
