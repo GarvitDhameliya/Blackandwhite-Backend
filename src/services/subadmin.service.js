@@ -2,12 +2,12 @@ const {Subadmin} = require("../models");
 
 // Craete Subadmin
 const createSubadmin = async (reqBody) => {
-  return Subadmin.create(reqBody);
+  return (await Subadmin.create(reqBody)).populate("faculty");
 };
 
 // Get subadmin list
 const getSubadminList = async (filter, options) => {
-  return Subadmin.find().populate("faculaty").populate("student").populate("course").populate("batch").populate("signinsheet");
+  return Subadmin.find().populate("faculty");
 };
 
 // Get subadmin by email

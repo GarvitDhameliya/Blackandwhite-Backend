@@ -6,6 +6,7 @@ const createSubadmin = {
     subadmin_name: Joi.string().required().trim(),
     username: Joi.string().required().trim(),
     password: Joi.string().required().trim(),
+    faculty: Joi.string().required(),
   }),
 };
 

@@ -24,34 +24,33 @@ const subadminSchema = new mongoose.Schema(
 
     //faculty ref
     faculty: {
-      type: mongoose.Schema.Types.ObjectId,
+      type: mongoose.Types.ObjectId,
       ref: "faculty",
     },
 
     //student ref
-    student: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "student",
-    },
+    //student: {
+      //type: mongoose.Types.ObjectId,
+      //ref: "student",
+    //},
 
     //batch ref
-    batch: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "batch",
-    },
+    //batch: {
+      //type: mongoose.Types.ObjectId,
+      //ref: "batch",
+    //},
 
     //course ref
-    course: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "course",
-    },
+    //course: {
+      //type: mongoose.Types.ObjectId,
+      //ref: "course",
+    //},
     //signinsheet ref
-    signinsheet: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "signinsheet",
-    },
-
-    is_active: {
+    //signinsheet: {
+      //type: mongoose.Types.ObjectId,
+      //ref: "signinsheet",
+    //},
+   is_active: {
       type: Boolean,
       default: true,
     },
